@@ -24,7 +24,7 @@
       
       <div v-for="item in objects" :key="item">
         <h3><span class="badge badge-success">{{item.pageid}} - {{item.title}}</span></h3>
-        <p><b>{{item.snippet}}</b></p>
+        <div v-html="item.snippet"></div>
       </div>
       <hr>
     </div>
